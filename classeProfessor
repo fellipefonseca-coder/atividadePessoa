@@ -1,0 +1,18 @@
+public class Professor extends Pessoa {
+
+    public Professor(String nome) {
+        super(nome);
+    }
+
+    // Sobrescrita
+    @Override
+    public void apresentar() {
+        System.out.println("Olá, sou o professor " + nome);
+    }
+
+    // Sobrecarga
+    @Override
+    public void apresentar(String mensagem) {
+        System.out.println(mensagem + " Sou o professor " + nome);
+    }
+}
